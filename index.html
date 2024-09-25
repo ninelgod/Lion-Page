@@ -173,13 +173,34 @@
 			</div>
 		</main>
 	</div>
-
+	<div class="notif-cookies fixed-bottom"></div>
+		<div class="alert alert-light alert-dismissible fade show mb-0" role="alert" id="cookieAlert">
+			<strong>Este sitio usa cookies!</strong> Usamos <a href="enlace-a-tu-politica-de-cookies.html" target="_blank">cookies</a> para mejorar tu experiencia en nuestra página. 
+			<button type="button" class="btn btn-dark btn-sm ml-2" id="acceptCookies">Aceptar</button>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close" id="closeCookies">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+	</div>
 	<footer class="bg-dark">
 		<h9>Derechos Reservados por Alguien®</h9>
 	</footer>
 
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>	
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			if (!localStorage.getItem('cookiesAccepted')) {
+				$('#cookieAlert').show();
+			} else {
+				$('#cookieAlert').hide();
+			}
+			$('#acceptCookies, #closeCookies').on('click', function() {
+				localStorage.setItem('cookiesAccepted', true);
+				$('#cookieAlert').alert('close');
+			});
+		});
+	</script>	
 </body>
 </html>

@@ -92,3 +92,11 @@ footer {
     width: 100%;
     max-width: 100%;
 }
+
+.fondo1 {
+    background-position: center;
+	background-size: cover;
+	background-attachment: fixed, scroll;
+	color: #000000;
+	background-image: url("../img/fondo.jpg");
+}

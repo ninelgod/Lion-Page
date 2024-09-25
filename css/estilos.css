@@ -116,6 +116,10 @@ footer {
 	background-image: url("../img/fondo2.jpg");
 }
 
-padding1 {
-    padding-top: 0.5;
+.without-padding {
+    margin-top: 0px;
+}
+
+.padding-top {
+    padding-top: 40px;
 }

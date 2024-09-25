@@ -54,7 +54,7 @@ header {
     transform: scale(1.1); 
 }
 .espaciosa{
-	padding-top: 20px;
+	padding: 20px 0px 0px 4px;
 }
 main {
     background: #fff;

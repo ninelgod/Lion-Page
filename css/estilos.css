@@ -107,3 +107,11 @@ footer {
 .transparente {
     background-color: #00000000;
 }
+
+.fondo2 {
+    background-position: center;
+	background-size: cover;
+	background-attachment: fixed, scroll;
+	color: #000000;
+	background-image: url("../img/fondo2.jpg");
+}

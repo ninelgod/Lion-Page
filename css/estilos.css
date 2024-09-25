@@ -18,16 +18,19 @@ header {
 
 .content {
     margin-top: 85px;
+    background-color: #ffffff00;
 }
 
 .contenedor-main {
     margin-bottom: 20px;
+    background-color: #ffffff00;
 }
 
 .contenedor-imagen {
     max-height: 180px;
     overflow: hidden;
     position: relative; 
+    background-color: #ffffff00;
 }
 
 .contenedor-imagen a {
@@ -99,4 +102,8 @@ footer {
 	background-attachment: fixed, scroll;
 	color: #000000;
 	background-image: url("../img/fondo.jpg");
+}
+
+.transparente {
+    background-color: #00000000;
 }

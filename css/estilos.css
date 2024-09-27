@@ -123,3 +123,14 @@ footer {
 .padding-top {
     padding-top: 40px;
 }
+
+.contenedor {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+    .ocultar {
+    display:none;
+    }
+    }
